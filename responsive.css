@@ -1,0 +1,16 @@
+body{
+background-color:darkgrey;
+}
+/* .cont1,.cont2,.cont3,.cont4{
+    border:  solid black;
+} */
+
+.cont3{
+    width: 100%;
+}
+.a1,.a3{
+    background-color:#eb34cc;
+}
+.a2,.a4{
+    background-color: aliceblue;
+}

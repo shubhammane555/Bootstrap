@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <main class="col-md-5 mx-auto mt-4">
+      <header class="text-center">
+        <h1 class="display-4 font-weight-bold">Fund Transfer</h1>
+        <h6 class="text-primary">Provide details</h6>
+      </header>
+      <hr />
+
+      <section>
+	  <div class="border border-primary">
+        <form action="register-backend" method="GET" class="font-weight-bold">
+		
+		
+		 <!-- payment mode -->
+          <div id="paymentField" name="paymentField" class="form-group">
+            <label for="payment">Payment Mode:</label><br />
+            <div class="font-weight-normal" id="payment" name="payment">
+              <div class="form-check form-check-inline">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="payment"
+                  id="RTGS"
+                  value="RTGS"
+                />
+                <label for="RTGS" class="form-check-label">RTGS</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="payment"
+                  id="NEFT"
+                  value="NEFT"
+                />
+                <label for="NEFT" class="form-check-label">NEFT</label>
+              </div>
+			  </div>
+			  </div>
+			    
+				
+				  <!-- Person Name -->
+				
+            <div id="nameField" name="nameField" class="form-group">
+              <label for="name"> Person Name* </label><br />
+              <input type="text" id="pn" name="pn" class="form-control"   
+                required />
+            </div>
+			
+			
+          <!-- Account No -->
+          <div id="name" name="name" class=" form-group">
+            <div id="ACNoField" name="ACNoField ">
+              <label for="acno">Account No*</label><br />
+              <input
+                type="number"
+                id="fname"
+                name="fname"
+                class="form-control"
+              
+                required
+              />
+            </div>
+            <div id="ifscField" name="ifscField" class="form-group">
+              <label for="ifsc"> IFSC Code* </label><br />
+              <input type="text" id="ifsc" name="ifsc" class="form-control"   
+                required />
+            </div>
+          </div>
+
+          <!-- amount -->
+          <div id="amtField" name="amtField" class="form-group">
+            <label for="amt">Amount*</label><br />
+            <input
+              type="number"
+              id="amt"
+              name="amt"
+              class="form-control"
+              placeholder="Enter Amount"
+              required
+            />
+        
+          </div>
+</div>
+     
+          <!-- Submit Button -->
+          <div id="registrationButton">
+            <input
+              type="registration"
+              value="Transfer"
+              class="btn btn-block btn-primary my-4"
+            />
+          </div>
+        </form
+		
+      </section>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

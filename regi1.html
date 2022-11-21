@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <main class="col-md-5 mx-auto mt-4">
+<header class="text-center">
+    <h1 class="display-3 text-primary text-uppercase">REGISTRATION FORM</h1>
+<h6 class="text-secandary">Provide your details</h6>
+</header>
+<hr/>
+
+<section>
+    <form action="backend" method="get" class="font-weight-bold">
+        <!--  name - fname & lname -->
+        <div id="name" name="name" class="row from-group">
+            <div id="fname" name="fname" class="col-lg-6">
+                <lebal for="fname">First Name</lebal>
+                <input type="text" id="name" name="name" class="form-control" autofocus required />
+
+            </div>
+            <div id="lname" name="lname" class="col-lg-6">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" class="form-control" />
+
+            </div>
+        </div>
+        <!-- email -->
+<div id="email" name="email" class="form-group">
+<lebal for="email">Email</lebal>
+<input type="text" id="email" name="email" class="form-control" placeholder="xyz@gmail.com" required/>
+<small id="emailFieldHelp" class="form-text text-muted">Your email is safe with us.</small>
+
+</div>
+<!-- 
+password -->
+
+<div id="pass" name="password" class="form-group">
+    <lebal for="password">Password</lebal>
+    <input type="password" id="pass" name="pass" class="form-control" placeholder="type password" required />
+    <small id="passwordHelp" class="form-text text-muted">
+        <ul style="padding: 0px; list-style: inside;">
+        <li>Password should be between 8-16 character</li>
+        <li>password should contain both uppercase and lowecase</li>
+        <li>password should conatin atleast one special charater</li></ul>
+    </small>
+</div>
+
+<!-- confirm password -->
+
+<div id="cpass" name="cpass" class="form-group">
+    <label for="cpass" >Confirm Password *</label>
+    <input type="password" name="cpass" class="form-control" placeholder="re-type password" required/>
+</div>
+
+<!-- date of birth -->
+<div id="dobField" name="dobfield" class="form-group">
+    <lebal for="dob"> Date Of Birth</lebal>
+    <input type="date" id="dob" name="dob" class="form-control" />
+</div>
+
+<!-- contry -->
+<div id="country" name="country" class="form-group">
+    <lebal for="country">Country</lebal>
+    <select name="country" id="country" class="form-control">
+        <option value="india" selected>India</option>
+        <option value="Africa" >Africa</option>
+        <option value="USA" >USA</option>
+        <option value="spain" >Spain</option>
+    </select>
+</div>
+
+
+<div id="gender" name="gender" class="form-group">
+    <lebal for="gender">Gender</lebal>
+    <div class="font-weight-normal" id="gender" name="gender">
+<div class="form-check form-check-inline">
+<input type="radio" class="form-check-input"  name="gender"  id="male" value="male" />
+<label for="male" class="form-check-label">Male</label>
+
+</div>
+<div class="form-check form-check-inline">
+    <input
+      type="radio"
+      class="form-check-input"
+      name="gender"
+      id="female"
+      value="female"
+    />
+    <label for="female" class="form-check-label">Female</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input
+      type="radio"
+      class="form-check-input"
+      name="gender"
+      id="other"
+      value="other"
+    />
+    <label for="other" class="form-check-label">Other</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input
+      type="radio"
+      class="form-check-input"
+      name="gender"
+      id="undisclosed"
+      value="undisclosed"
+    />
+    <label for="undisclosed" class="form-check-label"
+      >Rather not say</label
+    >
+  </div>
+
+    </div> 
+</div>
+
+
+          <!-- Employment Status -->
+          <div id="employmentField" name="employmentField" class="form-group">
+            <label for="employmentStatus">Employment Status:*</label><br />
+            <div
+              id="employmentStatus"
+              name="employmentStatus"
+              class="font-weight-normal"
+            >
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  name="student"
+                  id="student"
+                  class="form-check-input"
+                />
+                <label for="student" class="form-check-label">Student</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  name="unemployed"
+                  id="unemployed"
+                  class="form-check-input"
+                />
+                <label for="unemployed" class="form-check-label"
+                  >Unemployed</label
+                >
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  name="part-time"
+                  id="part-time"
+                  class="form-check-input"
+                />
+                <label for="part-time" class="form-check-label"
+                  >Part-time</label
+                >
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  name="full-time"
+                  id="full-time"
+                  class="form-check-input"
+                />
+                <label for="full-time" class="form-check-label"
+                  >Full-time</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div id="regidtarionbutton">
+            <input type="registration" value="regi" class="btn btn-block btn-primary" />
+          </div>
+
+
+
+
+    </form>
+</section>
+
+
+    </main>
+</body>
+</html>

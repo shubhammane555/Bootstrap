@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      
+      .bg-color {
+        background-color: gray;
+      }
+      .article-color {
+        background-color: white;
+      }
+      .footer {
+        padding: 10px;
+        }
+      .aside-section {
+        display: table-cell;
+        border-top: 10px solid grey;
+        border-bottom: 10px solid grey;
+        width: 25%;
+        background-color: rgb(241, 57, 204);
+      }
+      .padding {
+        padding: 5px;
+      }
+      .margin {
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      .navbar {
+        background-color: rgb(241, 57, 204);
+        padding: 10px 0;
+        text-decoration: none;
+      }
+
+      .header {
+        width: 100%;
+        text-align: center;
+       
+      }
+      #navbar-btn {
+        padding: 4px;
+        width: 4rem;
+        color: white;
+        background-color: black;
+      }
+      .center {
+        text-align: center;
+      }
+      #navbar-links li {
+        list-style: none;
+        display: inline;
+        
+        margin-left: 20px;
+
+      }
+      #navbar-links li a {
+        text-decoration: none;
+        color: black;
+        margin: 0 7px;
+       
+        font-family: Tahoma, sans-serif;
+      }
+      .font-style{
+        font-family: 'Brush Script MT', cursive;
+        
+      }
+      .container2 h1,h2 {
+        font-family: 'Brush Script MT', cursive;
+        font-size: 32px;
+      }
+      .aside-section ul li  {
+        margin: 8% 0;
+        padding-right: 10px;
+      }
+      article p {
+        font-family: Tahoma, sans-serif;
+      }
+      .display-inline-block{
+        display: inline-block;
+      }
+      .container{
+        margin: 0 10% !important;
+       
+        
+      }
+      .container2{
+       margin: 0 10% !important;
+       display: table;
+        
+      }
+
+      #article{
+       width: 75% !important;
+        display: table-cell;
+        vertical-align: top;
+       
+      }
+      @media screen and (max-width:600px){
+        .hide {
+          display: none;
+          text-align: center;
+        }
+
+        
+      }
+      @media  screen and (min-width:600px){
+        .nav-button{
+        float: left;
+        list-style-type: none;
+        display: none;
+      }
+      }
+      
+    </style>
+  </head>
+  <body class="bg-color ">
+    <div class="container">
+      <div class="center font-style">
+        <h1 style="color: white; font-size:45px ;text-shadow: 2px 2px black ;" >Header</h1>
+      </div>
+      <nav class="navbar" >
+          <ul id="navbar-links">
+          <li><button class="nav-button">&#9776;</button></li> 
+          </ul>
+          <ul id="navbar-links" class="hide">
+            <li>
+              <a href="#">Home</a>&nbsp &nbsp 
+              <li>
+                <a href="#">Projects </a> &nbsp
+              </li>
+            </li>
+            <li><a href="#">Contact </a> &nbsp</li>
+            <li style="float: right;">
+              <input
+                
+                type="text"
+                name="name"
+                placeholder="Search Bar"
+                required
+              />
+              &nbsp <button id="navbar-btn" type="button" name="Go">Go!</button>
+            </li>
+          </ul>
+        
+      </nav>
+    </div>
+    <div class="container2" >
+      
+        <div id="article" class="">
+          <article class="article-color  margin padding">
+          <h1 class="center">Article Heading</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut
+            harum blanditiis at consectetur sapiente, fugit excepturi, quia
+            repellat praesentium eum eos distinctio tempore minima voluptate est
+            soluta dolorem eveniet!
+          </p>
+          <section>
+            <h2>Sub Section</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              consequuntur molestias, dolorum, aspernatur provident sequi et
+              corporis quia ipsam quis voluptatem officiis quos soluta neque
+              deleniti necessitatibus eaque cum at?
+            </p>
+          </section>
+          <section>
+            <h2>Another Section</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              ut harum blanditiis at consectetur sapiente, fugit excepturi, quia
+              repellat praesentium eum eos distinctio tempore minima voluptate est
+              soluta dolorem eveniet!
+            </p>
+          </section>
+        </article>
+        
+      </div>
+      <div class="aside-section"   >
+          
+            <h2 style="text-align: center" class="font-style">Related</h2>
+            <ul>
+              <li><a href="#">Some text beside.Some text beside</a></li>
+              <li><a href="#">Some text besideSome text beside.</a></li>
+              <li><a href="#">Some More text beside.Some text beside</a></li>
+              <li><a href="#">OIt never stops RainingSome text beside</a></li>
+              <li><a href="#">Oh WellSome text beside</a></li>
+            </ul>
+          
+        </div>
+        
+
+    </div>
+    <div class="container" >
+      <footer class="article-color footer">
+        <p>© Copyright 2050 by nobody. All rights reserved.</p>
+      </footer>
+    </div>
+      
+
+    
+    
+  </body>
+</html>
